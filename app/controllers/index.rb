@@ -1,19 +1,24 @@
 
 
 get '/' do
-  puts "[LOG] Getting /"
-  puts "[LOG] Params: #{params.inspect}"
+ # @semester = params[:semester]
+ # puts @semester
+  # puts "[LOG] Getting /"
+  # puts "[LOG] Params: #{params.inspect}"
   erb :index
 end
 
-get '/cool_url' do
+
+get '/get_survey' do
   puts "[LOG] Getting /cool_url"
   puts "[LOG] Params: #{params.inspect}"
-  erb :get_cool_url
+  @semester = params[:semester]
+  puts @semester
+  erb :get_survey
 end
 
-post '/cool_url' do
+post '/thank_you' do
   puts "[LOG] Posting to /cool_url"
   puts "[LOG] Params: #{params.inspect}"
-  erb :post_cool_url
+  erb :thank_you
 end

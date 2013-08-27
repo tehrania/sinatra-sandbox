@@ -1,0 +1,38 @@
+<div class="container">
+  <h1>Feedback on the <%= @semester%> semester</h1>
+
+  <form method = "post" action="/thank_you">
+    <br>
+    <br>
+
+
+    Select course:
+    <select name="subject">
+      <option value="Maths"    >Maths</option>
+      <option value="Economics">Economics</option>
+      <option value="Geography">Geography</option>
+    </select><br><br>
+
+
+
+    Feedback:
+    <textarea cols="40" rows="5" name="feedback"></textarea>
+    <br><br>
+
+    I really enjoyed this course:<br> 
+    <br> 
+
+    Absolutely agree    
+    <input type="radio" name="rating" value="5"><br> 
+    Agree   
+    <input type="radio" name="rating" value="4"><br> 
+    Neutral   
+    <input type="radio" name="rating"value="3"><br> 
+    Disagree    
+    <input type="radio" name="rating" value="2"><br> 
+    Absolutely Disagree   
+    <input type="radio" name="rating" value="1"><br> 
+    <br> 
+    <input type="submit" value="submit">
+  </form>
+

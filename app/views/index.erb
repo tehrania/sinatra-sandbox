@@ -1,45 +1,17 @@
 <div class="container">
-  <h1>Welcome to Sinatra!</h1>
-  <p>Please give feedback on your semester</p>
 
-  <form method = "post" action="/cool_url">
-    <br>
-    <br>
+  <h1>Feedbackinator</h1>
 
+  <form method = "get" action="/get_survey">
+  Please choose a semester to give feedback on:
 
-    Select course:
-    <select name="post[subject]">
-      <option value="Maths"    >Maths</option>
-      <option value="Economics">Economics</option>
-      <option value="Geography">Geography</option>
-    </select><br><br>
-
-
-
-    Feedback:
-    <textarea cols="40" rows="5" name="feedback"></textarea>
-    <br><br>
-
-    I really enjoyed this course:<br> 
-    <br> 
-
-    Absolutely agree    
-    <input type="radio" name="rating" value="5"><br> 
-    Agree   
-    <input type="radio" name="rating" value="4"><br> 
-    Neutral   
-    <input type="radio" name="rating"value="3"><br> 
-    Disagree    
-    <input type="radio" name="rating" value="2"><br> 
-    Absolutely Disagree   
-    <input type="radio" name="rating" value="1"><br> 
-    <br> 
+ <select name="semester">
+      <option value="Autumn">Autumn</option>
+      <option value="Winter">Winter</option>
+      <option value="Spring">Spring</option>
+    </select>
     <input type="submit" value="submit">
-  </form>
-
-
-
-
+</form>
 
 
 
